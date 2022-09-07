@@ -1,3 +1,12 @@
 .item {
     display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 115px !important;
+    height: 105px !important;
+    object-fit: cover;
+    border: 1px solid #cdcccc;
 }
