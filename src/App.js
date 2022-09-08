@@ -1,5 +1,6 @@
 import './App.css';
 import Cart from './components/cart.js';
+import Footer from './components/footer.js';
 
 function App() {
   return (
@@ -10,22 +11,17 @@ function App() {
       </header>
       <div className='container'>
         <ul>
-          <Cart />
-          <Cart />
+          <Cart image='http://codeby.vteximg.com.br/arquivos/ids/159942-800-1029/trufa-tradicional.png?v=636916452526400000'
+            nameProduct='Trufa de tradicional' />
+          <Cart image='http://codeby.vteximg.com.br/arquivos/ids/159939-800-1029/trufa-morango-30g.png?v=636916431597070000'
+            nameProduct='Trufa de morango' />
+          <Cart image='http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000'
+            nameProduct='Trufa meio amarga' />
+          <Cart image='http://codeby.vteximg.com.br/arquivos/ids/159957-800-1029/trufa-coco.png?v=636929369885800000'
+            nameProduct='Trufa de coco' />
         </ul>
       </div>
-      <footer>
-        
-        <hr></hr>
-        <div>
-          <h2>Total</h2>
-          <spam>R$ 9,55</spam>
-        </div>
-        <p>Parabéns, sua compra tem frete grátis! (colocar em verde)</p>
-        <hr></hr>
-        <button> Finalizar compra</button>
-      
-      </footer>
+      <Footer />
     </div>
   );
 }
